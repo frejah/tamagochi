@@ -9,12 +9,16 @@ class Tamagochi {
 	 *  HUNGER LEVEL
 	 ************************************************/
 	giveFood() {
-		this.hungerLevel = 5;
+		this.setHungerLevel(5);
 	}
 
 	getHungerLevel() {
 		return this.hungerLevel;
 	}	
+
+	setHungerLevel(level) {
+		this.hungerLevel = level;
+	}
 
 	/************************************************
 	 *  ENERGY LEVEL
@@ -41,7 +45,7 @@ class Tamagochi {
 	 *  ACTIVITY LEVEL
 	 ************************************************/
 	goAndPlay() {
-		this.activityLevel = 5;
+		this.setActivityLevel(5);
 		
 		this.setEnergyLevel(this.energyLevel - 1);
 	}
@@ -50,12 +54,16 @@ class Tamagochi {
 		return this.activityLevel;
 	}
 
+	setActivityLevel(level) {
+		this.activityLevel = level;
+	}
+
 	/************************************************
 	 *  REDBULL LEVEL
 	 ************************************************/
 	drinkRedBull() {
-		this.hungerLevel--;
-		this.setEnergyLevel(this.energyLevel +3);
-		this.activityLevel+=3;
+		this.setHungerLevel(this.hungerLevel - 1);
+		this.setEnergyLevel(this.energyLevel + 3);
+		this.setActivityLevel(this.activityLevel += 3);
 	}
 }
