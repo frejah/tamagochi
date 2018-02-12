@@ -104,4 +104,12 @@ describe("Tamagochi", function() {
 
 		expect(tamagochi.getEnergyLevel()).toBe(5);
 	});
+
+	it("can eat a healty and balanced meal", function() {
+		var tamagochi = new Tamagochi();
+
+		tamagochi.eatHealthyMeal();
+
+		expect(tamagochi.getEnergyLevel()).toBe(4);
+	});
 });

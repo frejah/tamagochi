@@ -26,6 +26,9 @@ class Tamagochi {
 	goToSleep() {
 		this.setEnergyLevel(5);
 
+		// Uppdatera denna så att den anropar setHungerLevel istället.
+		// Vad ska du skicka för parameter till den?
+		// Kolla runt i denna fil för förslag på hur du kan göra.
 		this.hungerLevel--;
 	}
 
@@ -39,6 +42,12 @@ class Tamagochi {
 		}
 	
 		this.energyLevel = level;
+	}
+
+	eatHealthyMeal() {
+		// Anropa setEnergyLevel
+		// Öka nuvarande energy level med 2
+		// Kolla runt i denna fil för förslag på hur du kan göra.
 	}
 	
 	/************************************************
@@ -64,6 +73,6 @@ class Tamagochi {
 	drinkRedBull() {
 		this.setHungerLevel(this.hungerLevel - 1);
 		this.setEnergyLevel(this.energyLevel + 3);
-		this.setActivityLevel(this.activityLevel += 3);
+		this.setActivityLevel(this.activityLevel + 3);
 	}
 }
