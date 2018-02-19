@@ -29,7 +29,7 @@ class Tamagochi {
 		// Uppdatera denna så att den anropar setHungerLevel istället.
 		// Vad ska du skicka för parameter till den?
 		// Kolla runt i denna fil för förslag på hur du kan göra.
-		this.hungerLevel--;
+		this.setHungerLevel(this.hungerLevel -1);
 	}
 
 	getEnergyLevel() {
@@ -48,6 +48,8 @@ class Tamagochi {
 		// Anropa setEnergyLevel
 		// Öka nuvarande energy level med 2
 		// Kolla runt i denna fil för förslag på hur du kan göra.
+
+		this.setEnergyLevel(this.energyLevel + 2);
 	}
 	
 	/************************************************
@@ -75,4 +77,40 @@ class Tamagochi {
 		this.setEnergyLevel(this.energyLevel + 3);
 		this.setActivityLevel(this.activityLevel + 3);
 	}
+}
+
+// Control Flow
+
+let needsCoffee = true;
+if (needsCoffee === true) {
+    console.log('Finding coffee');
+} else {
+    console.log('Keep on keeping on!');
+}
+
+let isGoat = true;
+if (isGoat === true) {
+	console.log('Bääää!');
+	} else {
+		console.log('Im not goat!');
+	}
+
+let isGoldenRetriver = true;
+if (isGoldenRetriver === true) {
+	console.log('Is golden!');
+	} else {
+	console.log('Is Dalmatian!');
+}
+
+let likeLilys = true;
+if (likeLilys === true) {
+	console.log('Like lilys!');
+	} else {
+		console.log('Dont like lilys');
+}
+
+let isTugBoat = true;
+if (isTugBoat === true) {
+	} else {
+		console.log('Is not Leif');
 }
