@@ -1,0 +1,10 @@
+console.log(">> Welcome to Control Flow ");
+console.log(">> Initializing application!");
+console.log(">> 40%");
+console.log(">> 80%");
+console.log(">> 90%");
+console.log(">> Done!");
+console.log(">> Welcome user: Freja");
+console.log(">> ------------------------------");
+console.log(">> Begin coding control flows now");
+console.log(">> ------------------------------");
