@@ -122,8 +122,8 @@ summonDaemonAdvanced("Unknown", -1);
 // Output:
 // You attempt to summon a daemon of Nurgle
 // -------------------------------------------------------------------------------------
-console.log("---- Task #2 ----");
-summonDaemonAdvanced("Nurgle", -1);
+// console.log("---- Task #2 ----");
+// summonDaemonAdvanced("Nurgle", -1);
 // -------------------------------------------------------------------------------------
 
 
@@ -137,6 +137,6 @@ summonDaemonAdvanced("Nurgle", -1);
 // You attempt to summon a daemon of Nurgle
 // You hear a crackling sound - But nothing happens
 // -------------------------------------------------------------------------------------
-console.log("---- Task #3 ----");
-summonDaemonAdvanced("Nurgle", 0);
+// console.log("---- Task #3 ----");
+// summonDaemonAdvanced("Nurgle", 0);
 // -------------------------------------------------------------------------------------
