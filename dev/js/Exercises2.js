@@ -95,15 +95,7 @@
 
 
 function summonDaemonAdvanced(daemonType, daemonLevel) {
-	if(daemonType === "Nurgle") {
-		console.log("You attempt to summon a daemon of Nurgle");
 
-		if(daemonLevel === 0) {
-			console.log("You hear a crackling sound - But nothing happens");
-		}
-	} else {
-		console.log("You fail to summon a daemon");	
-	}
 }
 
 
