@@ -80,4 +80,71 @@
 
 
 
+// -------------------------------------------------------------------------------------
+//										Tasks
+// -------------------------------------------------------------------------------------
+// You will create a function and updated it with each task.
+// Once you complete one task, uncomment the next one, etc.
+// With each task you will change the function in some way.
+// Examples of such modifications:
+// * Add if statements
+// * Add console logs
+// * Add return statements
+// Some (most) Tasks require you to print multiple lines of text.
+// IMPORTANT: Only modify the function summonDaemonAdvanced, nothing else.
 
+
+function summonDaemonAdvanced(daemonType, daemonLevel) {
+	if(daemonType === "Nurgle") {
+		console.log("You attempt to summon a daemon of Nurgle");
+
+		if(daemonLevel === 0) {
+			console.log("You hear a crackling sound - But nothing happens");
+		}
+	} else {
+		console.log("You fail to summon a daemon");	
+	}
+}
+
+
+// -------------------------------------------------------------------------------------
+// Task #1: Print fail case
+// -------------------------------------------------------------------------------------
+// 
+// -------------------------------------------------------------------------------------
+// Output:
+// You fail to summon a daemon
+// -------------------------------------------------------------------------------------
+console.log("---- Task #1 ----");
+summonDaemonAdvanced("Unknown", -1);
+// -------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------
+// Task #2: Summon a daemon of Nurgle
+// -------------------------------------------------------------------------------------
+// Check if the parameter 'daemonType' is Nurgle and print the correct text if it is.
+// If it's not you should still print the fail to summon text from the previous Task.
+// Do this with an if-else statement.
+// -------------------------------------------------------------------------------------
+// Output:
+// You attempt to summon a daemon of Nurgle
+// -------------------------------------------------------------------------------------
+console.log("---- Task #2 ----");
+summonDaemonAdvanced("Nurgle", -1);
+// -------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------
+// Task #3: Summon a small daemon of Nurgle
+// In your if-statement from the previous Task (where you check if daemonType is Nurgle)
+// add a new if-statement that checks if the parameter 'daemonLevel' is 0.
+// This means you'll have an if-statement inside another if-statement.
+// -------------------------------------------------------------------------------------
+// Output (two lines):
+// You attempt to summon a daemon of Nurgle
+// You hear a crackling sound - But nothing happens
+// -------------------------------------------------------------------------------------
+console.log("---- Task #3 ----");
+summonDaemonAdvanced("Nurgle", 0);
+// -------------------------------------------------------------------------------------
