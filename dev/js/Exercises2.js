@@ -316,3 +316,11 @@ console.log("---- Task #11 ----");
 // Add console.log here
 // -------------------------------------------------------------------------------------
 
+
+
+// Task #12: Print five more combinations of values from the two arrays. 
+
+
+// Task #13: Create your own arrays and print values from them.
+// Remember that arrays can contain strings, numbers etc. Why not combine values
+// from one array with strings and one array with numbers?
