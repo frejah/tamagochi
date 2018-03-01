@@ -303,7 +303,5 @@ console.log("---- Task #9 ----");
 // -------------------------------------------------------------------------------------
 console.log("---- Task #9 ----");
 // Add console.log here
-console.log(daemonCandles.length);
-console.log(daemonSummoners.length);
 // -------------------------------------------------------------------------------------
 
