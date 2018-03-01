@@ -5,9 +5,13 @@
 // -------------------------------------------------------------------------------------
 // Example #1: Basic control flow
 // Question #1: What do you expect it to output?
+// 1.) "You spawn a small daemon"
 // Question #2: What does it actually output?
+// 2.) "You spawn a small daemon"
 // Question #3: What else can it output?
+// 3.) "You spawn a large daemon".
 // Question #4: How do you make it output the other texts?
+// If you change the paramter from false to true.
 // -------------------------------------------------------------------------------------
 
 // function spawnDaemon(isLarge) {
@@ -25,9 +29,13 @@
 // -------------------------------------------------------------------------------------
 // Example #2: Basic control flow
 // Question #1: What do you expect it to output?
+// 1.) "You shoot lightning from your fingers"
 // Question #2: What does it actually output?
+// 2.) "You shoot lightning from your fingers"
 // Question #3: What else can it output?
+// 3.) "You cast a fireball" and "You stare at a tree like a goat")
 // Question #4: How do you make it output the other texts?
+// 4.) You change the parameter in castSpell to either "Fireball" or anything else to run the else.
 // -------------------------------------------------------------------------------------
 
 // function castSpell(spellType) {
@@ -50,10 +58,15 @@
 // -------------------------------------------------------------------------------------
 // Example #3: Basic control flow
 // Question #1: What do you expect it to output?
+// 1.) "You cast a bucket of water at your foe".
 // Question #2: What does it actually output?
+// 2.) "You cast a bucket of water at your foe".
 // Question #3: What else can it output?
+// 3.) "You summon a blizzard of fungi on your foe", "You rain lava on your foe" or "You attempt to cast a powerful spell but can't decide which - your brain melts".
 // Question #4: How do you make it output the other texts?
+// 4.) Change the boolean parameter from true to false to make it run the else if.
 // Question #5: When is the parameter 'spellType' used? Under what conditions?
+// 5.) Inside the secound parameter spellType you have the value of "Lava" it will run when the === "Lava".
 // -------------------------------------------------------------------------------------
 
 // function castSpellAdvanced(weakSpell, spellType) {
@@ -95,21 +108,28 @@
 
 
 function summonDaemonAdvanced(daemonType, daemonLevel) {
+	if (daemonType === "Nurgle") { 
+		console.log("You attempt to summon a daemon of Nurgle");
 
+		if(daemonLevel === 0) {
+			console.log("You hear a crackling sound - But nothing happens");
+		}
+	} else {
+		console.log("You fail to summon a daemon");
+	}
 }
-
 
 // -------------------------------------------------------------------------------------
 // Task #1: Print fail case
-// -------------------------------------------------------------------------------------
-// 
-// -------------------------------------------------------------------------------------
-// Output:
-// You fail to summon a daemon
-// -------------------------------------------------------------------------------------
+// // -------------------------------------------------------------------------------------
+
+// // -------------------------------------------------------------------------------------
+// // Output:
+// // You fail to summon a daemon
+// // -------------------------------------------------------------------------------------
 console.log("---- Task #1 ----");
 summonDaemonAdvanced("Unknown", -1);
-// -------------------------------------------------------------------------------------
+// // -------------------------------------------------------------------------------------
 
 
 // -------------------------------------------------------------------------------------
@@ -122,11 +142,9 @@ summonDaemonAdvanced("Unknown", -1);
 // Output:
 // You attempt to summon a daemon of Nurgle
 // -------------------------------------------------------------------------------------
-// console.log("---- Task #2 ----");
-// summonDaemonAdvanced("Nurgle", -1);
+console.log("---- Task #2 ----");
+summonDaemonAdvanced("Nurgle", -1);
 // -------------------------------------------------------------------------------------
-
-
 // -------------------------------------------------------------------------------------
 // Task #3: Summon a small daemon of Nurgle
 // In your if-statement from the previous Task (where you check if daemonType is Nurgle)
@@ -137,6 +155,36 @@ summonDaemonAdvanced("Unknown", -1);
 // You attempt to summon a daemon of Nurgle
 // You hear a crackling sound - But nothing happens
 // -------------------------------------------------------------------------------------
-// console.log("---- Task #3 ----");
-// summonDaemonAdvanced("Nurgle", 0);
+console.log("---- Task #3 ----");
+summonDaemonAdvanced("Nurgle", 0);
 // -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
+// MURDER HISTORY
+	console.log("MURDER HISTORY");
+// -------------------------------------------------------------------------------------
+var room = "garden room";
+var suspect= "Mr. Clarke";
+
+var weapon = "";
+var solved = true;
+
+if (room === "gallery" && suspect === "Ms. Bone") {
+	solved = true;
+	weapon = "trophy";
+
+} else if (room === "garden room" && suspect === "Mr. Clarke") {
+	solved = true;
+	weapon = "poison";
+
+} else if (room === "library" && suspect === "Ms. Robertsson") {
+	solved = true;
+	weapon = "knife";
+
+} else {
+	solved = true;
+	weapon = "pool stick";
+}
+
+if (solved) {
+	console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
+}
