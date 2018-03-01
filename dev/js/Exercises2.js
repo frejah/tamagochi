@@ -121,15 +121,15 @@ function summonDaemonAdvanced(daemonType, daemonLevel) {
 
 // -------------------------------------------------------------------------------------
 // Task #1: Print fail case
-// // -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
 
-// // -------------------------------------------------------------------------------------
-// // Output:
-// // You fail to summon a daemon
-// // -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
+// Output:
+// You fail to summon a daemon
+// -------------------------------------------------------------------------------------
 console.log("---- Task #1 ----");
 summonDaemonAdvanced("Unknown", -1);
-// // -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
 
 
 // -------------------------------------------------------------------------------------
@@ -145,6 +145,8 @@ summonDaemonAdvanced("Unknown", -1);
 console.log("---- Task #2 ----");
 summonDaemonAdvanced("Nurgle", -1);
 // -------------------------------------------------------------------------------------
+
+
 // -------------------------------------------------------------------------------------
 // Task #3: Summon a small daemon of Nurgle
 // In your if-statement from the previous Task (where you check if daemonType is Nurgle)
@@ -158,33 +160,138 @@ summonDaemonAdvanced("Nurgle", -1);
 console.log("---- Task #3 ----");
 summonDaemonAdvanced("Nurgle", 0);
 // -------------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------------
-// MURDER HISTORY
-	console.log("MURDER HISTORY");
-// -------------------------------------------------------------------------------------
-var room = "garden room";
-var suspect= "Mr. Clarke";
 
-var weapon = "";
-var solved = true;
 
-if (room === "gallery" && suspect === "Ms. Bone") {
-	solved = true;
-	weapon = "trophy";
 
-} else if (room === "garden room" && suspect === "Mr. Clarke") {
-	solved = true;
-	weapon = "poison";
+/****************************************************************************************
+* 								Control Flow (contd.)
+****************************************************************************************/
 
-} else if (room === "library" && suspect === "Ms. Robertsson") {
-	solved = true;
-	weapon = "knife";
-
-} else {
-	solved = true;
-	weapon = "pool stick";
+function attackDaemon(daemonName, spellName) {
+	
 }
 
-if (solved) {
-	console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
-}
+
+// -------------------------------------------------------------------------------------
+// Task #4: Attack a silk daemon with mud
+// Create if-statements to damage the silk daemon by mud rain.
+// You can create a single one using && or you can create a nested if within an if
+// to check that spellName AND daemonName match.
+// Remember: Only silk daemons are damaged by mud rain
+// -------------------------------------------------------------------------------------
+// Output:
+// The Silk daemon vanishes under the mud
+// -------------------------------------------------------------------------------------
+console.log("---- Task #4 ----");
+attackDaemon("Silk daemon", "Mud rain");
+// -------------------------------------------------------------------------------------
+
+// -------------------------------------------------------------------------------------
+// Task #5: Attack a silk daemon with something else
+// Make sure silk daemons are not affected by other spells
+// -------------------------------------------------------------------------------------
+// Output:
+// The Silk daemon is unaffected by Fireball
+// -------------------------------------------------------------------------------------
+// console.log("---- Task #5 ----");
+// attackDaemon("Silk daemon", "Fireball");
+// -------------------------------------------------------------------------------------
+
+// -------------------------------------------------------------------------------------
+// Task #6: Failed attaack
+// If you pass in a daemonName that doesn't exist, print a default text.
+// Right now we only support Silk daemons, so feel free to print "Daemon not found"
+// for all other daemons.
+// -------------------------------------------------------------------------------------
+// Output:
+// Daemon not found
+// -------------------------------------------------------------------------------------
+// console.log("---- Task #5 ----");
+// attackDaemon("Strange daemon", "Fireball");
+// -------------------------------------------------------------------------------------
+
+
+/****************************************************************************************
+*		 								Arrays
+*****************************************************************************************
+* Arrays are a way of storing multiple things in the same variable.
+* An array have zero or more elements in it.
+* A number called 'index' is used to describe where an element exists in an array.
+* The first element in an array exists at index = 0
+* The last element in an array exists at index = length - 1
+****************************************************************************************/
+
+
+// -------------------------------------------------------------------------------------
+// Example #1: Basic array
+// Question #1: What do you expect it to output?
+// Question #2: What does it actually output?
+// Question #3: How many elements(items) are in the array?
+// -------------------------------------------------------------------------------------
+
+// var daemonArray = ["Khorne daemon", "Nurgle daemon", "Slaanesh daemon", "Tzeentch daemon"];
+// console.log(daemonArray[2]);
+
+// -------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------
+// Example #1: Array dimensions
+// -------------------------------------------------------------------------------------
+// Question #1: What do you expect it to output?
+// Question #2: What does it actually output?
+// Question #3: What's the index of "Blue horror"?
+// Question #4: What's the index of "Brimstone horror"?
+// -------------------------------------------------------------------------------------
+
+// var tzeentchDaemons = ["Pink horror", "Blue horror", "Brimstone horror"];
+// console.log(tzeentchDaemons.length);
+
+// -------------------------------------------------------------------------------------
+
+
+
+// -------------------------------------------------------------------------------------
+//										Tasks
+// -------------------------------------------------------------------------------------
+
+var daemonCandles = ["IKEA candle", "Luxury Candle", "Regular Candle", "Daemon Summoning Candle", "Miserable Candle", "Burnt Out Candle"];
+var daemonSummoners = ["Cleric Leif", "Bishop Barbro", "Minister Jehander", "Pope Francine"];
+
+// -------------------------------------------------------------------------------------
+// Task #7: Print from array
+// Use console log to print the 4th element from the daemonCandles array.
+// Hint: See Example 1 on how to print an element from an array
+// Hint: All arrays start at index zero
+// -------------------------------------------------------------------------------------
+// Output:
+// Daemon Summoning Candle
+// -------------------------------------------------------------------------------------
+console.log("---- Task #7 ----");
+// Add console.log here
+// -------------------------------------------------------------------------------------
+
+// -------------------------------------------------------------------------------------
+// Task #8: Print from array
+// Use console log to print the first element in the daemonSummoners array.
+// -------------------------------------------------------------------------------------
+// Output:
+// Cleric Leif
+// -------------------------------------------------------------------------------------
+console.log("---- Task #8 ----");
+// Add console.log here
+// -------------------------------------------------------------------------------------
+
+// -------------------------------------------------------------------------------------
+// Task #9: Print from array
+// Use console log to print the last element in the daemonCandles array.
+// -------------------------------------------------------------------------------------
+// Output:
+// Burnt Out Candle
+// -------------------------------------------------------------------------------------
+console.log("---- Task #9 ----");
+// Add console.log here
+// -------------------------------------------------------------------------------------
+
+
+
