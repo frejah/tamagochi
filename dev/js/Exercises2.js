@@ -167,10 +167,35 @@ summonDaemonAdvanced("Nurgle", 0);
 * 								Control Flow (contd.)
 ****************************************************************************************/
 
-function attackDaemon(daemonName, spellName) {
-	
+function silkDaemonHitBySpell(spellName) {
+	if (spellName === "Mud rain") {
+		console.log("The Silk daemon vanishes under the mud");
+	} else if (spellName === "Fireball") {
+		console.log("The Silk daemon is unaffected by Fireball");
+	} else if (spellName === "Lightning Bolt") {
+
+	}
 }
 
+function attackDaemon(daemonName, spellName) {
+
+	if (daemonName === "Silk daemon") {
+		silkDaemonHitBySpell(spellName);
+
+	} else if(daemonName === "Bloodthirster") {
+
+	} else {
+		console.log("Daemon not found");
+	}
+
+	if (daemonName === "Silk daemon" && spellName === "Mud rain") {
+		console.log("The Silk daemon vanishes under the mud");
+	} else if (daemonName === "Silk daemon" && spellName === "Fireball") {
+		console.log("The Silk daemon is unaffected by Fireball");
+	} else {
+		console.log("Daemon not found");
+	}
+}
 
 // -------------------------------------------------------------------------------------
 // Task #4: Attack a silk daemon with mud
@@ -193,8 +218,8 @@ attackDaemon("Silk daemon", "Mud rain");
 // Output:
 // The Silk daemon is unaffected by Fireball
 // -------------------------------------------------------------------------------------
-// console.log("---- Task #5 ----");
-// attackDaemon("Silk daemon", "Fireball");
+console.log("---- Task #5 ----");
+attackDaemon("Silk daemon", "Fireball");
 // -------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------
@@ -206,8 +231,8 @@ attackDaemon("Silk daemon", "Mud rain");
 // Output:
 // Daemon not found
 // -------------------------------------------------------------------------------------
-// console.log("---- Task #5 ----");
-// attackDaemon("Strange daemon", "Fireball");
+console.log("---- Task #5 ----");
+attackDaemon("Strange daemon", "Fireball");
 // -------------------------------------------------------------------------------------
 
 
@@ -225,8 +250,11 @@ attackDaemon("Silk daemon", "Mud rain");
 // -------------------------------------------------------------------------------------
 // Example #1: Basic array
 // Question #1: What do you expect it to output?
+// "Slaanesh daemon"
 // Question #2: What does it actually output?
+// "Slaanesh daemon"
 // Question #3: How many elements(items) are in the array?
+// 4
 // -------------------------------------------------------------------------------------
 
 // var daemonArray = ["Khorne daemon", "Nurgle daemon", "Slaanesh daemon", "Tzeentch daemon"];
@@ -239,9 +267,13 @@ attackDaemon("Silk daemon", "Mud rain");
 // Example #1: Array dimensions
 // -------------------------------------------------------------------------------------
 // Question #1: What do you expect it to output?
+// 3
 // Question #2: What does it actually output?
+// 3
 // Question #3: What's the index of "Blue horror"?
+// 1
 // Question #4: What's the index of "Brimstone horror"?
+// 2
 // -------------------------------------------------------------------------------------
 
 // var tzeentchDaemons = ["Pink horror", "Blue horror", "Brimstone horror"];
@@ -268,8 +300,9 @@ var daemonSummoners = ["Cleric Leif", "Bishop Barbro", "Minister Jehander", "Pop
 // Daemon Summoning Candle
 // -------------------------------------------------------------------------------------
 console.log("---- Task #7 ----");
-// Add console.log here
+console.log(daemonCandles[3]);
 // -------------------------------------------------------------------------------------
+
 
 // -------------------------------------------------------------------------------------
 // Task #8: Print from array
@@ -279,8 +312,9 @@ console.log("---- Task #7 ----");
 // Cleric Leif
 // -------------------------------------------------------------------------------------
 console.log("---- Task #8 ----");
-// Add console.log here
+console.log(daemonSummoners[0]);
 // -------------------------------------------------------------------------------------
+
 
 // -------------------------------------------------------------------------------------
 // Task #9: Print from array
@@ -290,8 +324,9 @@ console.log("---- Task #8 ----");
 // Burnt Out Candle
 // -------------------------------------------------------------------------------------
 console.log("---- Task #9 ----");
-// Add console.log here
+console.log(daemonCandles[5]);
 // -------------------------------------------------------------------------------------
+
 
 // -------------------------------------------------------------------------------------
 // Task #10: Print from array
@@ -302,8 +337,10 @@ console.log("---- Task #9 ----");
 // 4
 // -------------------------------------------------------------------------------------
 console.log("---- Task #10 ----");
-// Add console.log here
+console.log(daemonCandles.length);
+console.log(daemonSummoners.length);
 // -------------------------------------------------------------------------------------
+
 
 // -------------------------------------------------------------------------------------
 // Task #11: Print from multiple arrays
@@ -313,14 +350,22 @@ console.log("---- Task #10 ----");
 // Cleric Leif prepares to summon a daemon using Miserable Candle
 // -------------------------------------------------------------------------------------
 console.log("---- Task #11 ----");
-// Add console.log here
+console.log(daemonSummoners[0] + " prepares to summon a daemon using " + (daemonCandles[4]));
 // -------------------------------------------------------------------------------------
 
 
-
 // Task #12: Print five more combinations of values from the two arrays. 
-
+console.log(daemonSummoners[1] + " loves the " + (daemonCandles[1]));
+console.log("Mr " + daemonSummoners[2] + " prefers the " + daemonCandles[0]);
 
 // Task #13: Create your own arrays and print values from them.
 // Remember that arrays can contain strings, numbers etc. Why not combine values
 // from one array with strings and one array with numbers?
+var boats = ["Leif", "Östanvik", "Solskär", "Jehander", "Envik"];
+var buildingYears = [1946, 1974, 1946, 1970, 1983];
+
+console.log("The cement carrier " + boats[3] + " is build in " + buildingYears[3]);
+console.log("The tugboat " + boats[0] + " and the gravel boat " + boats[2] + " is both built in " + buildingYears[0]);
+console.log("We love or big orange and whitegreen cementcarriers " + boats[1] + " & " + boats[4] + " they are built in " + buildingYears[1] + " & " + buildingYears[4]);
+
+
