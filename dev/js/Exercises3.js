@@ -98,10 +98,15 @@ function printFightResults(unitId) {
 }
 
 // -------------------------------------------------------------------------------------
-// Task #1: Print from two different arrays
+// 										Task #1
 // -------------------------------------------------------------------------------------
 // Print output from two different arrays, using a single index.
 // Add the correct console.log statement to the function 'printUnitInfo' above.
+//-------------------------------------------------------------------------------------
+// Parameters:
+// unitType - Array containing string with unitnames
+// unitStrength - Array containing numbers representing the strength of an individual unit
+// unitId - The array index to be used, when looking up name and strength
 // -------------------------------------------------------------------------------------
 // Output:
 // Bloodcrushers - Strength 4
@@ -111,10 +116,16 @@ printUnitInfo(khorneDaemons, khorneDaemonStrengh, 2);
 // -------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------
-// Task #2: Print from two different arrays
+// 										Task #2
 // -------------------------------------------------------------------------------------
+// Print from two different arrays.
 // Print output from two different arrays, using a single index.
 // Add the correct console.log statement to the function 'printFight' above.
+// -------------------------------------------------------------------------------------
+// Parameters:
+// unitType - Array containing string with unitnames
+// unitStrength - Array containing numbers representing the strength of an individual unit
+// unitId - The array index to be used, when looking up name and strength
 // -------------------------------------------------------------------------------------
 // Output:
 // Bloodthirster vs. Space Marines
@@ -128,20 +139,26 @@ if (khorneDaemonStrengh[] > loyalistTroopStrengh[]) {
 
 
 // -------------------------------------------------------------------------------------
-// Task #3: Read from global arrays
+// 										Task #3
 // -------------------------------------------------------------------------------------
+// Read from global arrays
+//
 // Print info from global arrays, using an index passed in as a parameter
 // Use the global arrays:
 // * khorneDaemons
 // * khorneDaemonStrengh
 // * loyalistTroops
 // * loyalistTroopStrength
+//
 // Two steps:
 // 1) Use if-statements to compare strengths from the strength arrays to determine
 //	  which is greatest.
 // 2) In the if and/or else statement console.log the winner by reading from the
 //    correct array using the index passed in as a paramter.
 // Add the code to the function 'printFightResults' above.
+// -------------------------------------------------------------------------------------
+// Parameters:
+// unitId - The array index to be used, when looking up names and strengths
 // -------------------------------------------------------------------------------------
 // Output:
 // Primaris Marines wins
