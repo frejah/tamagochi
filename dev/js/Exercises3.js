@@ -123,6 +123,10 @@ function printFightResults(unitId) {
 	}
 }
 
+function fight(unitId) {
+}
+
+
 // -------------------------------------------------------------------------------------
 // 										Task #1
 // -------------------------------------------------------------------------------------
@@ -191,4 +195,30 @@ printFight(khorneDaemons, loyalistTroops, 1);
 // -------------------------------------------------------------------------------------
 console.log("---- Task #3 ----");
 printFightResults(3);
+// -------------------------------------------------------------------------------------
+
+
+
+// -------------------------------------------------------------------------------------
+// 										Task #4
+// -------------------------------------------------------------------------------------
+// Calling multiple functions from within one function.
+// Passing a parameter on, from one function, to other functions.
+//
+// Update the function 'fight' to call, in order:
+// * printFight
+// * printFightResults
+//
+// Make sure you call both functions with the appropriate parameter.
+// Hint: The one passed in to the fight function.
+// -------------------------------------------------------------------------------------
+// Parameters:
+// unitId - The array index to be used
+// -------------------------------------------------------------------------------------
+// Output:
+// Bloodthirster vs. Space Marines
+// Bloodthirster wins
+// -------------------------------------------------------------------------------------
+console.log("---- Task #4 ----");
+fight(1);
 // -------------------------------------------------------------------------------------
