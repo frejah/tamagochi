@@ -174,10 +174,13 @@ printFight(khorneDaemons, loyalistTroops, 1);
 // * loyalistTroopStrength
 //
 // Two steps:
-// 1) Use if-statements to compare strengths from the strength arrays to determine
-//	  which is greatest.
-// 2) In the if and/or else statement console.log the winner by reading from the
-//    correct array using the index passed in as a paramter.
+// 1) Use an if-statement to compare strength from a daemon with strength from a loyalist.
+//    Do this by getting a single strength from the daemons strenght array and a
+//    single strength from the loyalists strength array. Use the paramter unitId as the 
+//    index in the array.. [unitId]
+// 2) In the if, or else, print the name of the winning unit, by reading from the
+//    corresponding unit array and printing the name, also using [unitId].
+//
 // Add the code to the function 'printFightResults' above.
 // -------------------------------------------------------------------------------------
 // Parameters:
