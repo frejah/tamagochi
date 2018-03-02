@@ -10,14 +10,14 @@
 // Tzeentch
 // -------------------------------------------------------------------------------------
 
-function getDaemonName(arr, index) {
-	return arr[index];
-}
+// function getDaemonName(arr, index) {
+// 	return arr[index];
+// }
 
-var daemonGods = ["Khorne", "Slaanesh", "Tzeentch", "Nurgle"];
+// var daemonGods = ["Khorne", "Slaanesh", "Tzeentch", "Nurgle"];
 
-var daemonName = getDaemonName(daemonGods, 2);
-console.log(daemonName);
+// var daemonName = getDaemonName(daemonGods, 2);
+// console.log(daemonName);
 
 // -------------------------------------------------------------------------------------
 
@@ -30,21 +30,21 @@ console.log(daemonName);
 // 5, 3, 0
 // -------------------------------------------------------------------------------------
 
-function getDaemonsCount(arr) {
-	return arr.length;
-}
+// function getDaemonsCount(arr) {
+// 	return arr.length;
+// }
 
-var khornDaemons = ["Bloodletters", "Bloodthirster", "Bloodcrushers", "Herald of Khorne", "Skulltaker"];
-var nurgleDaemons = ["Plaguebearers", "Nurglings", "Poxbringer"];
-var slaaneshDaemons = [];
+// var khornDaemons = ["Bloodletters", "Bloodthirster", "Bloodcrushers", "Herald of Khorne", "Skulltaker"];
+// var nurgleDaemons = ["Plaguebearers", "Nurglings", "Poxbringer"];
+// var slaaneshDaemons = [];
 
-var numKhorne = getDaemonsCount(khornDaemons);
-var numNurgle = getDaemonsCount(nurgleDaemons);
-var numSlaanesh = getDaemonsCount(slaaneshDaemons);
+// var numKhorne = getDaemonsCount(khornDaemons);
+// var numNurgle = getDaemonsCount(nurgleDaemons);
+// var numSlaanesh = getDaemonsCount(slaaneshDaemons);
 
-console.log(numKhorne);
-console.log(numNurgle);
-console.log(numSlaanesh);
+// console.log(numKhorne);
+// console.log(numNurgle);
+// console.log(numSlaanesh);
 
 // -------------------------------------------------------------------------------------
 
@@ -57,23 +57,43 @@ console.log(numSlaanesh);
 // "Screamers", "Flamers"
 // -------------------------------------------------------------------------------------
 
-function printFollowers(arrGod) {
-	console.log(arrGod);
-}
+// function printFollowers(arrGod) {
+// 	console.log(arrGod);
+// }
 
-function addFollower(arrGod, follower) {
-	return arrGod.push(follower);
-}
+// function addFollower(arrGod, follower) {
+// 	return arrGod.push(follower);
+// }
 
-var tzeentchDaemons = [];
+// var tzeentchDaemons = [];
 
-addFollower(tzeentchDaemons, "Screamers");
-addFollower(tzeentchDaemons, "Flamers");
+// addFollower(tzeentchDaemons, "Screamers");
+// addFollower(tzeentchDaemons, "Flamers");
 
-printFollowers(tzeentchDaemons);
+// printFollowers(tzeentchDaemons);
 
 // -------------------------------------------------------------------------------------
 
+
+// -------------------------------------------------------------------------------------
+// Example #4: Compare array lengths
+// Question #1: What do you expect it to output?
+// Question #2: What does it actually output?
+// -------------------------------------------------------------------------------------
+
+// var fireSpells = ["Fireball", "Fire rain", "Lava flood"];
+// var waterSpells = ["Ice rain", "Frost bolt"];
+
+// if(fireSpells.length > waterSpells.length) {
+// 	console.log("There are more fire spells than water spells");
+// } else if(fireSpells.length === waterSpells.length) {
+// 	console.log("There are an equal amount of spells");
+
+// } else {
+// 	console.log("There are more water spells than fire spells");
+// }
+
+// -------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------
 //										Tasks
@@ -86,10 +106,12 @@ var loyalistTroops = ["Terminators", "Space Marines", "Scouts", "Primaris Marine
 var loyalistTroopStrengh = [3, 2, 1, 3, 2];
 
 function printUnitInfo(unitType, unitStrength, unitId) {
+	console.log("UPDATE THIS: Replace the 2s with the correct paramter. Which one contains an array index?");
 	console.log(khorneDaemons[2] + " - Strength " + khorneDaemonStrengh[2]);
 }
 
 function printFight(unitType, unitStrength, unitId) {
+	console.log("UPDATE THIS: Replace the 1s with the correct paramter. Which one contains an array index?");
 	console.log(khorneDaemons[1] + " vs. " + loyalistTroops[1]);
 }
 
