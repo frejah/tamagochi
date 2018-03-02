@@ -94,7 +94,11 @@ function printFight(unitType, unitStrength, unitId) {
 }
 
 function printFightResults(unitId) {
-
+	if (khorneDaemonStrengh[unitId] > loyalistTroopStrengh[unitId]) {
+		console.log("Some Khorne daemon wins... Print correct output here");
+	} else {
+		console.log("Some Loyalist troop wins... Print correct output here");
+	}
 }
 
 // -------------------------------------------------------------------------------------
@@ -133,9 +137,6 @@ printUnitInfo(khorneDaemons, khorneDaemonStrengh, 2);
 console.log("---- Task #2 ----");
 printFight(khorneDaemons, loyalistTroops, 1);
 // -------------------------------------------------------------------------------------
-if (khorneDaemonStrengh[] > loyalistTroopStrengh[]) {
-	console.log(khorneDaemons + "is bigger");
-}
 
 
 // -------------------------------------------------------------------------------------
