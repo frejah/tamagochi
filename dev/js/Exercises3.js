@@ -10,8 +10,8 @@
 // Tzeentch
 // -------------------------------------------------------------------------------------
 
-// function getDaemonName(arr, index) {
-// 	return arr[index];
+// function getDaemonName(arrDaemon, indexDaemon) {
+// 	return arrDaemon[indexDaemon];
 // }
 
 // var daemonGods = ["Khorne", "Slaanesh", "Tzeentch", "Nurgle"];
@@ -30,8 +30,8 @@
 // 5, 3, 0
 // -------------------------------------------------------------------------------------
 
-// function getDaemonsCount(arr) {
-// 	return arr.length;
+// function getDaemonsCount(arrDaemon) {
+// 	return arrDaemon.length;
 // }
 
 // var khornDaemons = ["Bloodletters", "Bloodthirster", "Bloodcrushers", "Herald of Khorne", "Skulltaker"];
@@ -57,18 +57,21 @@
 // "Screamers", "Flamers"
 // -------------------------------------------------------------------------------------
 
-// function printFollowers(arrGod) {
-// 	console.log(arrGod);
-// }
+function printFollowers(arrGod) {
+	console.log(arrGod);
+}
 
-// function addFollower(arrGod, follower) {
-// 	return arrGod.push(follower);
-// }
+function addFollower(arrGod, follower) {
+	arrGod.push(follower);
+	printFollowers(arrGod);
+}
 
-// var tzeentchDaemons = [];
+var tzeentchDaemons = [];
 
-// addFollower(tzeentchDaemons, "Screamers");
-// addFollower(tzeentchDaemons, "Flamers");
+addFollower(tzeentchDaemons, "Screamers");
+addFollower(tzeentchDaemons, "Flamers");
+addFollower(tzeentchDaemons, "Lord of Change");
+addFollower(tzeentchDaemons, "Blue Horror");
 
 // printFollowers(tzeentchDaemons);
 
@@ -78,20 +81,22 @@
 // -------------------------------------------------------------------------------------
 // Example #4: Compare array lengths
 // Question #1: What do you expect it to output?
+// "There are more fire spells than water spells".
 // Question #2: What does it actually output?
+// "There are more fire spells than water spells")
 // -------------------------------------------------------------------------------------
 
-// var fireSpells = ["Fireball", "Fire rain", "Lava flood"];
-// var waterSpells = ["Ice rain", "Frost bolt"];
+var fireSpells = ["Fireball", "Fire rain", "Lava flood"];
+var waterSpells = ["Ice rain", "Frost bolt"];
 
-// if(fireSpells.length > waterSpells.length) {
-// 	console.log("There are more fire spells than water spells");
-// } else if(fireSpells.length === waterSpells.length) {
-// 	console.log("There are an equal amount of spells");
+if(fireSpells.length > waterSpells.length) {
+	console.log("There are more fire spells than water spells");
+} else if(fireSpells.length === waterSpells.length) {
+	console.log("There are an equal amount of spells");
 
-// } else {
-// 	console.log("There are more water spells than fire spells");
-// }
+} else {
+	console.log("There are more water spells than fire spells");
+}
 
 // -------------------------------------------------------------------------------------
 
