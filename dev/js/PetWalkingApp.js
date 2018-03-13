@@ -1,19 +1,20 @@
 var dogBreeds = ["German Shepherd", "Dachshund", "Icelandic Sheepdog", "Beagle", "Scottish Terrier", "French Bulldog", "Dobermann", "Collie", "Dalmatiner", "Pointer", "Welsh springer spaniel", "Griffon Bruxellois", "Pug", "Whippet"];
-var printOutDogBreed = document.getElementsByTagName("h1");
+var catBreeds = ["Ragdoll", "Norsk Skogskatt","Bondkatt", "Siames"];
+var birdBreeds = ["Kanariefågel", "Undulat", "Kakadua", "Ara", "Dront"]
 
-var dogIndex = getRandomDog();
-var selectedDog = dogBreeds[dogIndex];
-var numDogs = dogBreeds.length;
 
-console.log("Selected dog: " + selectedDog);
-console.log("Num dogs: " + numDogs);
-
-function getRandomDog() {
-	return 7;
+function getRandomIndex(loadsOfStuff) {
+	return Math.floor(Math.random() * loadsOfStuff.length);
 }
 
+function printOutArray(indexArray) {
+	var randomBreedIndex = getRandomIndex(indexArray);
+	return indexArray[randomBreedIndex];
+}
 
-var generateRandomDog = dogBreeds[Math.floor(Math.random() * dogBreeds.length)];
+// 16, 10, 11, 6, 7, 11, 12, 16
+var randomBreed = printOutArray(catBreeds);
 
-	// * 10) + 1);
-console.log(generateRandomDog);
+//Print out in HTML
+var printOutArrayInHtml = document.getElementById("htmlContainer");
+printOutArrayInHtml.innerHTML = randomBreed;
