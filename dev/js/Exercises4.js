@@ -15,3 +15,17 @@ function stringToArray(output) {
 	return split;
 }
 
+/*********************************************************************************************
+* Write a function that prints every word individually.
+* You must use the stringToArray function that you created earlier.
+* Hint: for-loop, console.log, arr.length
+**********************************************************************************************
+* Output:
+* Envik
+* is
+* a
+* lovely
+* ship
+**********************************************************************************************/
+
+printWordsFromArray("Envik is a lovely ship");
