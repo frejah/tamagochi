@@ -8,3 +8,10 @@
 
 var output = stringToArray("Leif is very angry today");
 console.log(output);
+
+function stringToArray(output) {
+	var split = output.split(" ");
+	console.log(split);
+	return split;
+}
+
