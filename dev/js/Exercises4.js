@@ -50,6 +50,10 @@ function printWordsFromArray(strSentence) {
 **********************************************************************************************/
 
 var wordExists = findWordInSentence("Nordanvind is fast like the wind", "like");
+console.log("like exists: " + wordExists);
+
+var wordDoesNotExist = findWordInSentence("Nordanvind is fast like the wind", "kebab");
+console.log("kebab exists: " + wordDoesNotExist);
 
 function findWordInSentence(aSentence, aWord) {
 	var makeArray = stringToArray(aSentence);
@@ -59,14 +63,14 @@ function findWordInSentence(aSentence, aWord) {
 		if (makeArray[i] == aWord) {
 			return true;
 
-		 if else {
+		 } else {
 			return false;
 			
 		}
 	}
 }
 
-console.log("like exists: " + wordExists);
+
 
 // var makeArray = printWordsFromArray(wordExists);
 
